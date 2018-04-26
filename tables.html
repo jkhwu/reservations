@@ -108,6 +108,24 @@
                     $("#tableWell-" + i + 1).append("<h2><span class='label label-primary'>" + tableNumber + "</span> | " + tableData[i].customerID + "</h2>");
                 }
             });
+
+        // // Ryan's code
+        // $.ajax({
+        //     url: currentURL + "/api/tables",
+        //     method: "GET"
+        // })
+        // .then(function(tableData) {
+
+        //     let newData = JSON.parse(tableData)
+
+        //         // Here we are logging the URL so we have access to it for troubleshooting
+        //     console.log("------------------------------------");
+        //     console.log("URL: " + currentURL + "/api/tables");
+        //     console.log("------------------------------------");
+
+        //     // Here we then log the NYTData to console, where it will show up as an object.
+
+        //     console.log("------------------------------------");
     }
 
     function runWaitListQuery() {

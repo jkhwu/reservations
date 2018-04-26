@@ -78,6 +78,16 @@ app.get('/api/tables', (req, res) => {
     // });
 });
 
+// // Ryan's code
+// app.get('/api/tables', function(req, res) {
+//     res.setHeader('Content-Type', 'application/json');
+
+//     firebase.database().ref('/Customers').once('value').then(function(data) {
+//         let newData = data.val()
+//         res.send(newData);
+//     })
+// })
+
 // GET "/api/waitlist"
 // Displays waitlist
 app.get('/api/waitlist', (req, res) => {
